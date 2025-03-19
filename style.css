@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .header {
     background: #0057a4;
     background-image: url("./image/banner-header.png");
@@ -26,10 +30,6 @@
     height: 2px;
     background: linear-gradient(to right, #f9c924, #e4af18, #fff98c, #ffd440);
     margin: 10px auto;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
 }
 
 .customer-info {
@@ -69,6 +69,7 @@ body {
 }
 
 .warranty-container {
+    width: 83%;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -239,10 +240,13 @@ iframe {
     height: 71px;
     color: white;
     font-size: 28px;
-}
-
-.contact-containter {
-    width: 83%;
+    /* Giới hạn để tránh tràn màn hình */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    height: max-content;
 }
 
 .contact-content {
@@ -265,15 +269,26 @@ iframe {
     margin: 0;
 }
 
-@media (max-width: 1261px) {
+.contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 83%;
+    margin: auto;
+}
+
+
+
+@media (max-width: 1000px) {
     .warranty-container {
         border-radius: 0;
     }
 
     .info-box p,
-    .warranty-list li {
+    .warranty-list li,
+    .contact-content {
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
 
     .date-info {
@@ -283,4 +298,5 @@ iframe {
     .date {
         min-width: 0;
     }
+
 }
