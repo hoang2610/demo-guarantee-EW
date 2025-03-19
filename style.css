@@ -73,6 +73,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    font-size: 14px;
 }
 
 .warranty-left {
@@ -82,6 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    font-size: 14px;
 }
 
 .note {
